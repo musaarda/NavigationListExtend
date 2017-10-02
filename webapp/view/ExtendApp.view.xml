@@ -1,0 +1,37 @@
+<mvc:View
+	controllerName="sap.demo.controller.ExtendApp"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.tnt"
+	xmlns:m="sap.m"
+	xmlns:x="sap.demo.controls"
+	height="100%">
+	<m:Button icon="sap-icon://menu2"
+			  press="onCollapseExpandPress" />
+	<NavigationList id="navigationList" width="320px">
+		<x:XNavigationListItem
+			text="Item 1"
+			icon="sap-icon://globe">
+			<x:XNavigationListItem text="Sub Item 1" icon="sap-icon://building">
+				<x:XNavigationListItem text="Sub Item 1 - 1" icon="sap-icon://employee">
+					<x:XNavigationListItem text="Sub Item 1 - 1 - 1" icon="sap-icon://end-user-experience-monitoring"/>
+					<x:XNavigationListItem text="Sub Item 1 - 1 - 2" icon="sap-icon://end-user-experience-monitoring"/>
+				</x:XNavigationListItem>
+				<x:XNavigationListItem text="Sub Item 1 - 2" icon="sap-icon://employee" />
+			</x:XNavigationListItem>
+			<x:XNavigationListItem text="Sub Item 2" icon="sap-icon://building">
+				<x:XNavigationListItem text="Sub Item 2 - 1" icon="sap-icon://employee" />
+				<x:XNavigationListItem text="Sub Item 2 - 2" icon="sap-icon://employee" />
+			</x:XNavigationListItem>
+			<x:XNavigationListItem text="Sub Item 3" icon="sap-icon://building"/>
+			<x:XNavigationListItem text="Sub Item 4" icon="sap-icon://building"/>
+		</x:XNavigationListItem>
+		<x:XNavigationListItem
+				text="Item 2"
+				icon="sap-icon://globe">
+			<x:XNavigationListItem text="Sub Item 1" icon="sap-icon://building"/>
+			<x:XNavigationListItem text="Sub Item 2" icon="sap-icon://building"/>
+			<x:XNavigationListItem text="Sub Item 3" icon="sap-icon://building"/>
+			<x:XNavigationListItem text="Sub Item 4" icon="sap-icon://building"/>
+		</x:XNavigationListItem>
+	</NavigationList>
+</mvc:View>

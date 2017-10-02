@@ -1,0 +1,27 @@
+<mvc:View
+	controllerName="sap.demo.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.tnt"
+	xmlns:m="sap.m"
+	height="100%">
+	<m:Button icon="sap-icon://menu2"
+			  press="onCollapseExpandPress" />
+	<NavigationList id="navigationList" width="320px">
+		<NavigationListItem
+			text="Item 1"
+			icon="sap-icon://employee">
+			<NavigationListItem text="Sub Item 1"/>
+			<NavigationListItem text="Sub Item 2"/>
+			<NavigationListItem text="Sub Item 3"/>
+			<NavigationListItem text="Sub Item 4"/>
+		</NavigationListItem>
+		<NavigationListItem
+				text="Item 2"
+				icon="sap-icon://building">
+			<NavigationListItem text="Sub Item 1"/>
+			<NavigationListItem text="Sub Item 2"/>
+			<NavigationListItem text="Sub Item 3"/>
+			<NavigationListItem text="Sub Item 4"/>
+		</NavigationListItem>
+	</NavigationList>
+</mvc:View>
